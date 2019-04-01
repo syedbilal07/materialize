@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Dialogs</title>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+        <script>
+            function showToast(message, duration){
+                Materialize.toast(message, duration)
+            }
+
+            function showToast1(message, duration){
+                Materialize.toast('<i>' + message + '</i>', duration)
+            }
+
+            function showToast2(message, duration){
+                Materialize.toast(message, duration, 'rounded')
+            }
+
+            function showToast3(message, duration) {
+                Materialize.toast('Hello Materialize', duration, '', function toastCompleted(){
+                    alert('Toast Dismissed');
+                });
+            }
+        </script>
+    </head>
+    <body class="container">
+        <h2>Toasts</h2>
+        <a class="btn" onclick="showToast('Hello Materialize', 3000)">Normal Alert</a>
+        <a class="btn" onclick="showToast1('Hello Materialize', 3000)">Italic Alert</a>
+        <a class="btn" onclick="showToast2('Hello Materialize', 3000)">Rounded Alert</a>
+        <a class="btn" onclick="showToast3('Hello World', 3000)">Callback Alert</a>
+
+        <h2>Tooltips</h2>
+        <a class="btn tooltipped" data-position="bottom" data-delay="30" data-tooltip="I'm In Bottom">Bottom</a>
+        <a class="btn tooltipped" data-position="left" data-delay="30" data-tooltip="I'm In The Left">Left</a>
+        <a class="btn tooltipped" data-position="right" data-delay="30" data-tooltip="I'm In The Right">Right</a>
+        <a class="btn tooltipped" data-position="top" data-delay="30" data-tooltip="I'm On Top">Top</a>
+    </body>
+</html>

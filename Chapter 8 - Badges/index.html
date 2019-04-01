@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Badges</title>
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script>  
+    </head>
+    <body class="container">
+        <h2>Badges In List</h2>
+        <div class="collection">
+            <a href="#" class="collection-item">Inbox<span class="badge">12</span></a>
+            <a href="#" class="collection-item">Sent<span class="new badge">4</span></a>
+            <a href="#" class="collection-item">Outbox</a>
+            <a href="#" class="collection-item">Drafts<span class="badge">2</span></a>
+        </div>
+        <h2>Badges In Dropdowns</h2>
+        <ul id="dropdown" class="dropdown-content">
+            <li><a href="#">Inbox<span class="badge">12</span></a></li>
+            <li><a href="#">Unread</a></li>
+            <li><a href="#">Sent<span class="new badge">4</span></a></li>
+            <li><a href="#">Outbox<span class="badge">2</span></a></li>
+        </ul>
+        <a class="btn dropdown-button" href="#" data-activates="dropdown">
+            Dropdown<i class="mdi-navigation-arrow-drop-down right"></i>
+        </a>
+        <h2>Badges In Navigation</h2>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo">Tutorials Point</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href = "">Inbox</a></li>
+                    <li><a href = "">Unread<span class = "new badge">4</span></a></li>
+                    <li><a href = "#">Sent</a></li>
+                    <li><a href = "#">Outbox</a></li>
+                </ul>
+            </div>
+        </nav>
+    </body>
+</html>
